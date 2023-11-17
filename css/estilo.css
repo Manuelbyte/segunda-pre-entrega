@@ -61,13 +61,32 @@ nav .menu li a:hover{
 }
 footer{
     display: flex;
-    background-color: #333;
+    background-color: #121111;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 0.5.%;
     width: 100%;
+    justify-content:space-around;
+    position: relative;
+    bottom: 0;
 }
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;}
 
+    .redes-sociales li {
+        margin: 0 10px;
+    }
+    
+    .redes-sociales a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 30px;
+        align-items: center;
+        
+    }
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
