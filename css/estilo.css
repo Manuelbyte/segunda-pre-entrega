@@ -43,8 +43,8 @@ p{
 .logo img{
     border-radius: 60%;
     margin: 20px 10px 20px 0;
-    margin-right: auto;
-    align-items: center;
+    max-width: none;
+   
 }
 .menu{
     padding: 30px;
@@ -82,7 +82,6 @@ nav .menu li a:hover{
 
 .container1 div img{
     align-items: center;
-    max-height: 100%;
     border: 1px solid rgb(255, 255, 255);
     margin: 0 auto;
     transition: 0.5s;
@@ -92,8 +91,9 @@ nav .menu li a:hover{
     overflow:hidden;
 }
 
-img:hover{
-    transform:scale(0.9 );
+img:not(header nav div img):hover {
+    transform: scale(0.9);
+    transition: transform 0.5s;
 }
 
 .redes-sociales {
