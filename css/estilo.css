@@ -79,7 +79,6 @@ nav .menu li a:hover{
 /*No estoy pudiendo lograr que se ocupen los espacios en blanco, pero ya solucione la responsividad de las grillas*/
 
 
-
 .container1 div img{
     align-items: center;
     border: 1px solid rgb(255, 255, 255);
@@ -90,12 +89,22 @@ nav .menu li a:hover{
     height: 100%;
     overflow:hidden;
 }
-
-img:not(header nav div img):hover {
+img:not(header nav div img ):hover {
     transform: scale(0.9);
     transition: transform 0.5s;
-}
 
+
+}
+/*img:not(main section div):hover {
+    transform: scale(0.9);
+    transition: transform 0.5s;}*/
+
+    /*Todavia no puedo quitar el efecto de escalado al carrusel*/
+
+.row{
+    text-align:center;
+    justify-content: center;
+}
 .redes-sociales {
     list-style: none;
     display: flex;
@@ -115,7 +124,6 @@ img:not(header nav div img):hover {
 @media (max-width: 700px) {
     header{
         text-align: center;
-        flex-wrap: wra
     }
     nav {
         flex-direction: column;
