@@ -8,7 +8,7 @@
 body {
     padding:5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right bottom, rgb(255, 255, 255), #eaeaea, #bdbdbdea, #888888f6, rgb(113, 113, 113));
+    background-image: linear-gradient(to right bottom, rgb(255, 255, 255), #eaeaea, #bdbdbdea, #bfbfbff6, rgb(156, 156, 156));
     /*border:5px solid rgb(78, 172, 78); para ver como se comporta Body con algunos cambios*/
     min-height: 100%;
 }
@@ -53,21 +53,42 @@ p{
     list-style: none;
     display: flex;
     margin-top: 14px;
+    align-items: end;
     
 }
 
-nav .menu a{
+nav .menu li a{
     text-decoration: none;
+    margin: 5px;
     padding: 10px;
     color:antiquewhite;
+    justify-content: space-evenly;
+}
+nav .menu li a{
+    position: relative;
+    list-style: none;
+    cursor:pointer;
 }
 
-nav .menu li a:hover{
-   background-color: rgb(17, 17, 16);
-    color: rgb(181, 28, 28);
-    border-radius: 35%;
-    text-transform: capitalize;
-    transition: 0.9s;
+nav .menu li a::before{
+    content:"";
+    background-color: rgb(220, 45, 29);
+    position: absolute;
+    left:0;
+    bottom: 3px;
+    height: 3px;
+    width:0%;
+    transition: 0.4s ease-in-out;
+}
+
+nav .menu li a:hover::before{
+    content:"";
+    background-color: rgb(236, 146, 10);
+    position: absolute;
+    left:0;
+    bottom: 3px;
+    height: 3px;
+    width:100%;
 }
 
 .container1{
@@ -77,6 +98,7 @@ nav .menu li a:hover{
     margin-top: 20px;
     padding:20px;
     column-gap: 5px;
+    
 }
 
 
