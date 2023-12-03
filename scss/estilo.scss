@@ -4,15 +4,14 @@
     box-sizing: border-box;
 }
 body {
-    padding:5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: linear-gradient(to right bottom, rgb(255, 255, 255), #eaeaea, #bdbdbdea, #dfcecef6, rgb(196, 188, 188));
-    min-height: 100%;
 header{
     display: flex;
     flex-wrap: nowrap;
     background-color: rgb(142, 58, 58) 255;
     height: 102px;
+    
 .nav__menuheader{
         margin: 14px 0 20px 0;
         width: 100%;
@@ -21,6 +20,8 @@ header{
         align-items: center;
         justify-content:center;
         box-shadow: 0 0 20px rgb(0, 0, 0);
+        max-width: 100%;
+          
 } 
 .header__tittle {
         margin: 20px;
@@ -38,6 +39,7 @@ header{
         display: flex;
         margin-top: 10px;
         align-items: end;
+        max-width: 100%;
         
 }
 nav .header__menulyst li a{
@@ -85,8 +87,7 @@ main{
         text-align: center;
         }
     .galeria{
-        padding: 20px 0;
-      
+        padding: 20px 0px 20px 20px;
       }
       
       .galeria img{
@@ -101,7 +102,6 @@ main{
             width: 100%;
             height: 100%;
             overflow:hidden;
-            
           }
       }
       img{
@@ -124,6 +124,7 @@ main{
         text-align:center;
         justify-content: center;
         width: 100%;
+        height: 100%;
       }   
   } 
   footer{
@@ -161,13 +162,19 @@ main{
         display: inline-flex;
         flex-direction: column;
         flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        margin: 100px 15px 130px 15px ;
 
     }
   
     .header__menulyst{
         align-items: center;
         justify-content:center;
+        text-align: left;
+        
     }
+    
     .title1{
         display:flex;
         font-size: 0,2rem;
