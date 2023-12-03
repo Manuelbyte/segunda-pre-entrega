@@ -6,55 +6,53 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <title>Carlos Biggs Watercolor</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <h3 class="title1">Carlos Biggs Watercolor</h3>
-            <div class="logo"><img src="./Img/Favicon2/apple-icon-72x72.png" alt="LOGO">
+    <header class="header">
+        <nav class="nav__menuheader">
+            <h3 class="header__tittle">Carlos Biggs Watercolor</h3>
+            <div class="header__logo"><img src="./Img/Favicon2/apple-icon-72x72.png" draggable="false" alt="LOGO">
             </div>
-            <ul class="menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Pages/landscapes.html">Landscapes</a></li>
-                <li><a href="./Pages/cars.html">Cars</a></li>
-                <li><a href="./Pages/elfs.html">Elfs</a></li>
-                <li><a href="./Pages/cv-and-contact.html">Contact</a></li>
+            <ul class="header__menulyst">
+                <li><a class="header__link" href="./index.html">Inicio</a></li>
+                <li><a class="header__link" href="./Pages/landscapes.html">Landscapes</a></li>
+                <li><a class="header__link" href="./Pages/cars.html">Cars</a></li>
+                <li><a class="header__link" href="./Pages/elfs.html">Elfs</a></li>
+                <li><a class="header__link" href="./Pages/cv-and-contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
-    <main>
-        <section>
-            <div class="indextext">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ea nemo, neque nihil alias quos optio? Sed sint, suscipit eius, dolorum saepe exercitationem unde, maiores ea enim laboriosam in eos consequuntur a facilis rerum aliquid expedita at. Provident quam, delectus possimus odio ullam adipisci non?
+    <main class="main">
+        <section class="main__sectiontext">
+            <div class="main__divtext">
+                <p class="main__text">
+                  Since I was little I felt the need to express myself through images, I loved drawing for as long as I can remember.
+                  At one point in my life I came across watercolor and it conquered me.I don't know who chose who more than 30 years ago.A permanent experiment with the presence of the unpredictable.
             </p>
             </div>
             <div class="row">
-                <div id="carouselExample" class="carousel slide w-50  mx-50" >
+                <div id="carouselExample" class="carousel slide w-75  mx-50" >
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="./Img/index/paisajeiglesiabig.jpg" class="d-block w-100" draggable="false" alt="...">
+                        <img src="./Img/index/paisajeiglesiabig.jpg" class="d-block w-100" draggable="false" alt="..." oncontextmenu="return false">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Img/index/paisajebotebig.jpg" class="d-block w-100" draggable="false" alt="...">
+                        <img src="./Img/index/paisajebotebig.jpg" class="d-block-50 w-100'" draggable="false" alt="..."oncontextmenu="return false">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Img/index/auto7big.jpeg" class="d-block w-100" draggable="false" alt="...">
+                        <img src="./Img/index/auto7big.jpeg" class="d-block w-100" draggable="false" alt="..."oncontextmenu="return false">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Img/index/paisajebotebig.jpg" class="d-block w-100" draggable="false" alt="...">
+                        <img src="./Img/index/auto6big.jpeg" class="d-block w-100" draggable="false" alt="..."oncontextmenu="return false">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Img/index/auto6big.jpeg" class="d-block w-100" draggable="false" alt="...">
+                        <img src="./Img/index/paisaje5big.jpg" class="d-block w-100" draggable="false" alt="..."oncontextmenu="return false">
                       </div>
                       <div class="carousel-item">
-                        <img src="./Img/index/paisaje5big.jpg" class="d-block w-100" draggable="false" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./Img/index/paisaje7big.jpg" class="d-block w-100" draggable="false" alt="...">
+                        <img src="./Img/index/paisaje7big.jpg" class="d-block w-100" draggable="false" alt="..."oncontextmenu="return false">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -70,10 +68,10 @@
         </section>
     </main>
     <footer>
-      <div class="derecho"> <p>&copy; 2023 Carlos Biggs Watercolor Todos los derechos reservados. | <a href="politica-de-privacidad.html">Política de privacidad</a></p></div>
+      <div class="footer__derecho"> <p>&copy; 2023 Carlos Biggs Watercolor All rights reserved. | <a href="politica-de-privacidad.html">Privacy policy</a></p></div>
         <div>
-          <ul class="redes-sociales">
-            <li class="redes-sociales">
+          <ul class="footer__redes">
+            <li class="footer__redesmenu">
               <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
               <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
               <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -81,6 +79,7 @@
           </ul>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/main.js"></script>
 </body>
 </html>

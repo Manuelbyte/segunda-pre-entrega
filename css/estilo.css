@@ -1,170 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    padding:5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right bottom, rgb(255, 255, 255), #eaeaea, #bdbdbdea, #bfbfbff6, rgb(156, 156, 156));
-    /*border:5px solid rgb(78, 172, 78); para ver como se comporta Body con algunos cambios*/
-    min-height: 100%;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right bottom, rgb(255, 255, 255), #eaeaea, rgba(189, 189, 189, 0.9176470588), rgba(223, 206, 206, 0.9647058824), rgb(196, 188, 188));
+  min-height: 100%;
 }
-
-header{
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: rgb(142, 58, 58) 255;
+body header {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(142, 58, 58) 255;
+  height: 102px;
 }
-
-nav{
-    width: 100%;
-    margin: 0 auto;
-    background-image: linear-gradient(to left top, rgba(55, 5, 5, 0.938), #6b0a07f7, #630808ea, #340909f6, #340505);
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
+body header .nav__menuheader {
+  margin: 14px 0 20px 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.809);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
-
-p{
-    font-size:1.2rem;
-    padding: 25px;
-    margin: 0 auto;
-    text-align: center;
-    }
-
-.title1 {
-    margin: 20px;
-    color: white;
-    text-align: left;
-    padding: 15px;
+body header .header__tittle {
+  margin: 20px;
+  color: rgb(227, 227, 227);
+  padding: 20px;
 }
-.logo img{
-    border-radius: 60%;
-    margin: 20px 10px 20px 0;
-    max-width: none;
-    border: ridge black;
-   
+body header .header__logo img {
+  border-radius: 50%;
+  border: 15px black;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
 }
-.menu{
-    padding: 30px;
-    list-style: none;
-    display: flex;
-    margin-top: 14px;
-    align-items: end;
-    
+body header .header__menulyst {
+  padding: 30px;
+  list-style: none;
+  display: flex;
+  margin-top: 10px;
+  align-items: end;
 }
-
-nav .menu li a{
-    text-decoration: none;
-    margin: 5px;
-    padding: 10px;
-    color:antiquewhite;
-    justify-content: space-evenly;
+body header nav .header__menulyst li a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px;
+  color: antiquewhite;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
 }
-nav .menu li a{
-    position: relative;
-    list-style: none;
-    cursor:pointer;
+body header nav .header__menulyst li a {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
 }
-
-nav .menu li a::before{
-    content:"";
-    background-color: rgb(220, 45, 29);
-    position: absolute;
-    left:0;
-    bottom: 3px;
-    height: 3px;
-    width:0%;
-    transition: 0.4s ease-in-out;
+body header nav .header__menulyst li a::before {
+  content: "";
+  background-color: rgb(23, 21, 21);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 2px;
+  width: 0%;
+  transition: 0.5s ease-in-out;
 }
-
-nav .menu li a:hover::before{
-    content:"";
-    background-color: rgb(236, 146, 10);
-    position: absolute;
-    left:0;
-    bottom: 3px;
-    height: 3px;
-    width:100%;
+body header nav .header__menulyst li a:hover::before {
+  content: "";
+  background-color: rgb(34, 63, 179);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 2px;
+  width: 100%;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
 }
-
-.container1{
-    display:grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
-    margin-top: 20px;
-    padding:20px;
-    column-gap: 5px;
-    
+body main .main__text {
+  font-size: 1.2rem;
+  padding: 25px;
+  margin-top: 20px;
+  text-align: center;
 }
-
-
-
-.container1 div img{
-    align-items: center;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 0 auto;
-    transition: 0.5s;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    overflow:hidden;
+body main .galeria {
+  padding: 20px 0;
 }
-img:not(header nav div img ):hover {
-    transform: scale(0.9);
-    transition: transform 0.5s;
-
-
+body main .galeria img {
+  background-color: #ffffff;
+  padding: 12px;
+  width: 100%;
+  box-shadow: 0 0 15px rgb(57, 18, 18);
 }
-/*img:not(main section div):hover {
-    transform: scale(0.9);
-    transition: transform 0.5s;}*/
-
-    /*Todavia no puedo quitar el efecto de escalado al carrusel*/
-
-.row{
-    text-align:center;
-    justify-content: center;
+body main .galeria img #galeria-modal .modal-img {
+  width: 100%;
+  background-color: #ffffff;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-.redes-sociales {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;}
-
-    .redes-sociales li {
-        margin: 0 10px;
-    }
-    
-    .redes-sociales a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 30px;
-    }
-
+body main img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.8s;
+}
+body main img:not(header nav div img, .header__logo, .modal-img, .row #carouselExample .carousel-inner .carousel-item img):hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+body main img::before {
+  content: "";
+  transform: scale(1);
+}
+body main .row {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+body footer {
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+body footer .redes-sociales li {
+  list-style: none;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+}
+body footer .redes-sociales li .redes-socialesmenu li a {
+  align-items: center;
+  text-decoration: none;
+}
 @media (max-width: 700px) {
-    header{
-        text-align: center;
-    }
-    nav {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .title1{
-        align-items: center;
-        display:flex;
-    }
+  body body {
+    align-items: center;
+  }
+  body body header {
+    text-align: center;
+    align-items: center;
+    margin: 130px 25px 130px 25px;
+  }
+  body header {
+    text-align: center;
+    align-items: center;
+    margin: 100px 15px 130px 15px;
+  }
+  body .nav__menuheader {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body .header__menulyst {
+    align-items: center;
+    justify-content: center;
+  }
+  body .title1 {
+    display: flex;
+    font-size: 0, 2rem;
+  }
+  body footer {
+    display: flex;
+  }
+  body footer a {
+    color: black;
+  }
 }
 
-/*
+/*# sourceMappingURL=estilo.css.map */
