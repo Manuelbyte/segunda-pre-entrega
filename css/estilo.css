@@ -126,13 +126,13 @@ body footer {
   justify-content: center;
   margin-top: 50px;
 }
-body footer .redes-sociales li {
+body footer .redes-sociales {
   list-style: none;
   margin: 0 10px;
   display: inline-flex;
   align-items: center;
 }
-body footer .redes-sociales li .redes-socialesmenu li a {
+body footer .redes-sociales .redes-socialesmenu li a {
   align-items: center;
   text-decoration: none;
 }
