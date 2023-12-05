@@ -32,7 +32,7 @@ body header .header__tittle {
 body header .header__logo img {
   border-radius: 50%;
   border: 15px black;
-  box-shadow: 0 0 15px rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 body header .header__menulyst {
   padding: 30px;
@@ -40,7 +40,6 @@ body header .header__menulyst {
   display: flex;
   margin-top: 10px;
   align-items: end;
-  max-width: 100%;
 }
 body header nav .header__menulyst li a {
   text-decoration: none;
@@ -58,7 +57,7 @@ body header nav .header__menulyst li a {
 }
 body header nav .header__menulyst li a::before {
   content: "";
-  background-color: rgb(23, 21, 21);
+  background-color: rgba(0, 0, 0, 0.809);
   position: absolute;
   left: 0;
   bottom: 3px;
@@ -75,6 +74,49 @@ body header nav .header__menulyst li a:hover::before {
   height: 2px;
   width: 100%;
   box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+body main .main__contactform {
+  max-width: 750px;
+  margin: 20px auto;
+  background-color: rgb(21, 19, 19);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 0 rgba(70, 65, 65, 0.1);
+}
+body main .main__contactform label {
+  margin: 20px;
+}
+body main .main__contactform h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+body main .main__contactform form {
+  display: flex;
+  flex-direction: column;
+}
+body main .main__contactform label {
+  margin: 20px 0;
+  color: #333;
+}
+body main .main__contactform textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+body main .main__contactform button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+body main .main__contactform button:hover {
+  background-color: #45a049;
 }
 body main .main__text {
   font-size: 1.2rem;
@@ -124,18 +166,31 @@ body main .row {
 body footer {
   font-size: 1.2rem;
   text-align: center;
-  justify-content: center;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body footer .redes-sociales {
+body footer .footer__redes {
   list-style: none;
-  margin: 0 10px;
-  display: inline-flex;
-  align-items: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
-body footer .redes-sociales .redes-socialesmenu li a {
-  align-items: center;
+body footer .footer__redes li {
+  margin: 0 10px;
+}
+body footer .footer__redes li a {
   text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 @media (max-width: 700px) {
   body body {
@@ -173,6 +228,10 @@ body footer .redes-sociales .redes-socialesmenu li a {
   }
   body footer a {
     color: black;
+  }
+  body .footer__redes {
+    flex-direction: inline;
+    align-items: center;
   }
 }
 
