@@ -11,6 +11,8 @@ body header {
   display: flex;
   background-color: rgb(0, 0, 0) 255;
   height: 102px;
+  margin: 0 auto;
+  text-align: center;
 }
 body header .nav__menuheader {
   margin: 14px 0 20px 0;
@@ -70,10 +72,11 @@ body header nav .header__menulyst li a:hover::before {
 }
 body main .main__contactform {
   max-width: 750px;
-  margin: 20px auto;
   background-color: rgb(21, 19, 19);
   padding: 20px;
   border-radius: 8px;
+  margin: 0 auto;
+  text-align: center;
   box-shadow: 0 0 15px 0 rgba(70, 65, 65, 0.1);
 }
 body main .main__contactform label {
@@ -81,12 +84,13 @@ body main .main__contactform label {
 }
 body main .main__contactform h1 {
   text-align: center;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 body main .main__contactform form {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 body main .main__contactform label {
   margin: 20px 0;
@@ -100,7 +104,7 @@ body main .main__contactform textarea {
   font-size: 16px;
 }
 body main .main__contactform button {
-  background-color: #4caf50;
+  background-color: #053d96;
   color: #fff;
   padding: 12px;
   border: none;
@@ -109,7 +113,7 @@ body main .main__contactform button {
   font-size: 18px;
 }
 body main .main__contactform button:hover {
-  background-color: #45a049;
+  background-color: #3b3333;
 }
 body main .main__text {
   font-size: 1.2rem;
